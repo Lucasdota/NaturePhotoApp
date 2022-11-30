@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+
+<!--
+    Description:
+        
+        - A photo app about nature with a scrollable content, some images and a form.
+
+    Knowledges applied:
+
+        .transparent header with a inv div right under it to make the main element scrollable and hid behind the header, 
+        used (overflow, z-index and background properties)
+        .shadow to the header text
+        .fixed background
+        .border-radius to make it look cooler
+        .figure with figcaptions to describe it
+        .unordered and ordered list 
+        .form with an action attached to it so the information gathered is sent somewhere
+        .fieldsets to better style the questios with legends
+        .radio buttons with only one option selectable and one selected by default
+        .checkbox buttons 
+        .email input that only accepts email format text and it is required along with a submit styled button
+        .footer with some information
+        .viewport meta tag to adjust the width according to the device's width
+        .description meta tag to help browsers understand the content
+        .link tag to add icon to the browser tab bar
+        .and more
+-->
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="description" content="A nature photo app to practice the basics.">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Nature Photo App</title>
+        <link rel="stylesheet" href="NaturePhoto.css">
+        <link rel="icon" href="https://cdn-icons-png.flaticon.com/512/6376/6376244.png">
+    </head>
+    <body>
+        <header>
+        <h1>Nature Photo App</h1>
+        </header>
+        <div class="inv-header"></div><!--a invisible header underneath the main header with an inherited background
+        to avoid the main content overflowing it, think of it like an invisible block that can't be
+    overflowed-->
+        <main>
+        <h2>Nature Views</h2>
+        <img src="https://images.pexels.com/photos/3591318/pexels-photo-3591318.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1">
+        <h3>Places with the coolest nature landscapes:</h3>
+        <ul>
+            <li>Italy</li>
+            <li>Greece</li>
+            <li>France</li>
+        </ul>
+        <figure><img src="https://images.pexels.com/photos/3225528/pexels-photo-3225528.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1">
+        <figcaption><span class="positano">Positano</span> - Italy</figcaption>
+        </figure>
+        <h3>Benefits of visiting breathtaking views:</h3>
+        <ol>
+            <li>Create life-long memories</li>
+            <li>Estimulate your freedom</li>
+            <li>Synchronize with the creation</li>
+        </ol>
+        <figure><img src="https://images.pexels.com/photos/164041/pexels-photo-164041.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1">
+        <figcaption>A <span class="beach">beach</span> - Greece</figcaption>
+        </figure>
+        <h2>Travel Form</h2>
+        <form action="https://test.com"><!--a form with an action property to send the information
+        to a destination-->
+        <fieldset><!--a field with a question legend; only one button can be selected-->
+            <legend>Do you plan to travel this year?</legend>
+            <input type="radio" name="travel" checked>Yes</input>
+            <input type="radio" name="travel">No</input>
+        </fieldset>
+        <fieldset><!--multi-selection checkboxes-->
+            <legend>What's your favorite season to travel?</legend>
+            <input type="checkbox">Summer</input>
+            <input type="checkbox">Winter</input>
+            <input type="checkbox">Autumn</input>
+            <input type="checkbox">Spring</input>
+        </fieldset>
+        <div class="email">
+        <input type="email" placeholder="Enter your email" required><!--a required email input that
+        only accepts email text formats-->
+        <input type="submit" value="Submit"><!--an stylized submit button-->
+        </div>
+        </form>
+        <footer><!--a footer with an anchor link to my linkedin-->
+            <p>No Copyright - <a href="https://www.linkedin.com/in/lucas-dota-trombini-9b91b0251/">Developer Lucas Dota</a></p>
+        </footer>
+        </main>
+    </body>
+</html>

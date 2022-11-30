@@ -1,0 +1,109 @@
+html{
+    min-height:200px;
+}
+
+body{
+    margin:auto; 
+    text-align:center;
+    background:url(https://images.pexels.com/photos/2783619/pexels-photo-2783619.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1);
+    background-size: cover;
+    background-attachment: fixed;
+    background-position:center center;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+/*a fixed header with min-height to avoid overflowing text; flex display to 
+center the text*/
+header{
+    position:fixed;
+    background:rgba(255,255,255,90%);
+    top:0%;
+    height:14.7%;
+    min-height:60px;
+    width:100%;
+    z-index:10;
+    display:flex;
+    justify-content: center;
+}
+
+.inv-header{
+    position:fixed;
+    top: 0%;
+    height:14.7%;
+    min-height:60px;
+    width:100%;
+    background:inherit;
+}
+
+/*a responsive size font with clamp value to resize accordingly*/
+h1{
+    text-shadow:2px 2px rgb(212, 210, 210);
+    font-size:clamp(0,5rem, 0,5rem + 2vw, 1.625rem);
+    align-self: flex-start;
+    margin:auto;
+}
+
+/*the main content of the page with an 90% transparent background; 60% width; 
+auto overflow; abd a calculed margin-top to resize accordingly*/
+main{
+    width:60%;
+    margin:auto;
+    margin-top:clamp(60px, 14vh, 10rem);
+    padding-top:1%;
+    background:rgba(255,255,255,90%);
+    overflow:auto;    
+}
+
+img{
+    width:65%;
+    border-radius:5px;
+    min-width:250px;
+}
+
+figure{
+    margin:20px auto;
+}
+
+form{
+    width:50%;
+    margin:auto;
+}
+
+fieldset{
+    text-align:left;
+    margin-bottom:20px;
+}
+
+.email{
+    margin:auto;
+}
+
+input[type=submit]{
+    background-color:rgba(255,255,255,90%);
+    border-radius:5px;
+    border-color:rgb(119, 117, 117);
+}
+
+footer{
+    padding:1%;
+}
+
+ul, ol{
+    width:50%;
+    margin:auto;
+    text-align:left;
+}
+
+h3{
+    width:50%;
+    text-align:left;
+    margin:15px auto;
+}
+
+.positano{
+    font-style:italic;
+}
+
+.beach{
+    font-weight:bold;
+}
