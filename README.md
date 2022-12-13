@@ -1,10 +1,10 @@
 # NaturePhotoApp
  
-    Description:
+Description:
         
         - A photo app about nature with a scrollable content, some images and a form.
 
-    Knowledges applied:
+Knowledges applied:
 
         .transparent header with a inv div right under it to make the main element scrollable and hid behind the header, 
         used (overflow, z-index and background properties)
